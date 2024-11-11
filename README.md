@@ -44,7 +44,7 @@ def generate_text(start_word, num_words):
     result = [current_word]
     for _ in range(num_words - 1):
         if current_word in transitions:
-            next_word = random.choice(transitions[current_word])
+            next_word = random.choice(transitions[current_word]) 
             result.append(next_word)
             current_word = next_word
         else:
@@ -60,4 +60,4 @@ To test your implementation, you should be able to run the script from the comma
 python3 markov.py "The" 100
 ```
 
-Given the freedom to choose your own corpus, there are no automated tests for this assignment. That said, the above command will be used to evaluate your implementation.
+Given the freedom to choose your own corpus, there are no automated tests for this assignment. That said, the above command will be used to evaluate your implementation. 
