@@ -42,6 +42,6 @@ parser.add_argument("start_word", type=str, help="The starting word for text gen
 parser.add_argument("num_words", type=int, help="The number of words to generate")# help for number of words
 
 args = parser.parse_args() #args
-
+ 
 # Generate and print the text
 print(generate_text(args.start_word, args.num_words)) #prints our generate text function argument
